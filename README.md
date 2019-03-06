@@ -1,2 +1,3 @@
-# chobuki
-for fubuki.cn
+我是一个仓库 QωQ
+
+~~服务器？没钱~~
