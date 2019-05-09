@@ -1,0 +1,67 @@
+<!-- fubuki.cn/about -->
+
+<html>
+
+<title>About</title>
+
+<body>
+    <div class="text">
+        <div class="_Displayed" id="text1">
+            <span style="color:gray; font-size: 33px">关于本站</span>
+            <hr>
+            <p>本站由蒟蒻<a href="https://www.luogu.org/space/show?uid=32831">xxc</a>维护。</p>
+            <p>出于一些原因（网站没有备案，不能使用国内的免费对象存储；xxc太穷，租不起服务器
+                等），本站暂时放在Github上，导致访问速度极慢（如你所见）。您可以通过首页右上角的链接直接访问仓库（请允许我厚颜无耻的求一个star）。</p>
+            <p>按照原定计划，fubuki.cn将<del>用来养鸽子</del>用作舰娘"吹雪"的收集站。<del>不过近期绝对是不可能建成的</del></p>
+            <p>本站有xc.fubuki.cn（xxc的博客）和test.fubuki.cn（测试页面）两个子站点，您可以通过首页上方的链接直接访问它们。</p>
+            <p>至于为什么上面的链接会传送到洛谷。。。不知道呢~(￣▽￣)~*</p>
+        </div>
+        <div class="_Hide" id="text2">
+            <span style="color:gray; font-size: 33px">About</span>
+            <hr>
+            <p>This website is maintained by <a href="https://www.luogu.org/space/show?uid=32831">xxc</a>.</p>
+            <p>For some reasons (websites are not on file and can not use free object storage in China; xxc is too poor to rent servers, etc.), the site is temporarily placed on Github, resulting in very slow access speed (as you can see). You can access the warehouse directly through the link in the upper right corner of the home page .</p>
+            <p>According to the original plan, 'fubuki.cn' will be <del>used to raise pigeons </del> a collection station for "Fubuki" (a warship girl). <del>But it's absolutely impossible to build in the near future.</del></p>
+            <p>This site has two sub-sites: 'xc.fubuki.cn' (xxc's blog) and 'test.fubuki.cn' (test page). You can access them directly through the link above the home page.</p>
+            <p>As for why the above link will be sent to 'luogu.org'... I don't know.~(￣▽￣)~*</p>
+        </div>
+        <button class="language" onclick="whenClick()" id="button1">English</button>
+    </div>
+</body>
+
+<script>
+    function whenClick() {
+        if (button1.innerHTML == "English") {
+            button1.innerHTML = "简体中文";
+            text1.className = "_Hide";
+            text2.className = "_Displayed";
+        } else {
+            button1.innerHTML = "English";
+            text2.className = "_Hide";
+            text1.className = "_Displayed";
+        }
+    }
+</script>
+
+<style>
+    ._Hide {
+        display: none;
+    }
+
+    .language {
+        font-size: 12px;
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+</html>
